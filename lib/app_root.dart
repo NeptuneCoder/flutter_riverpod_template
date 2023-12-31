@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod_template/app/theme/app_theme.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
 import 'package:flutter_riverpod_template/app/ext/context_ext.dart';
 import 'package:flutter_riverpod_template/app_router.dart';
@@ -43,6 +44,7 @@ class _AppRootState extends ConsumerState<AppRoot> {
             routeInformationProvider:
                 ref.watch(appRouterProvider).routeInformationProvider,
             themeMode: ThemeMode.light,
+            theme: AppTheme.light,
             onGenerateTitle: (context) => context.loc.appName,
             builder: FlutterSmartDialog.init(),
           ),

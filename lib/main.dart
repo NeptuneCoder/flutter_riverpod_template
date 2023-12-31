@@ -6,12 +6,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod_template/app/state/app_state_service.dart';
 import 'package:flutter_riverpod_template/app/store/app_store.dart';
 import 'package:flutter_riverpod_template/app_root.dart';
+import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final prefs = await SharedPreferences.getInstance();
-  // GetIt.instance.registerSingleton<AppStore>();
+  GetIt.instance.registerSingleton<AppStore>(AppStore(prefs: prefs));
   // AppStore(prefs: prefs)
   runApp(ProviderScope(
     child: AppRoot(),
