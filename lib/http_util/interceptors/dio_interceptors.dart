@@ -1,6 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:get_it/get_it.dart';
-import 'package:flutter_riverpod_template/app/store/app_store.dart';
 
 class HeaderInterceptor extends Interceptor {
   @override
