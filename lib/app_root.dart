@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
-import 'package:riverpod_demo/app/ext/context_ext.dart';
-import 'package:riverpod_demo/app_router.dart';
-import 'package:riverpod_demo/generated/l10n.dart';
+import 'package:flutter_riverpod_template/app/ext/context_ext.dart';
+import 'package:flutter_riverpod_template/app_router.dart';
+import 'package:flutter_riverpod_template/generated/l10n.dart';
 
 class AppRoot extends ConsumerStatefulWidget {
   const AppRoot({super.key});

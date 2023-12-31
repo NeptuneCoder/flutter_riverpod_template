@@ -1,4 +1,4 @@
-import 'package:riverpod_demo/app/ext/shared_preferences_ext.dart';
+import 'package:flutter_riverpod_template/app/ext/shared_preferences_ext.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AppStore {

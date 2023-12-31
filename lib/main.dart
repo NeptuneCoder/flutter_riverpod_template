@@ -3,9 +3,9 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_demo/app/state/app_state_service.dart';
-import 'package:riverpod_demo/app/store/app_store.dart';
-import 'package:riverpod_demo/app_root.dart';
+import 'package:flutter_riverpod_template/app/state/app_state_service.dart';
+import 'package:flutter_riverpod_template/app/store/app_store.dart';
+import 'package:flutter_riverpod_template/app_root.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
